@@ -15,6 +15,13 @@ FlowRouter.route('/', {
 	}
 });
 
+FlowRouter.route('/tasks', {
+	action:function(){
+		BlazeLayout.render('App_Body', {main:'Landing_page'}
+		);
+	}
+});
+
 FlowRouter.route('/logout', {
 	action:function(){
 		Meteor.logout(function(){
