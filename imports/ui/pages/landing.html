@@ -1,5 +1,4 @@
-<body>
-  <div class="container">
+ <template name="Landing_page">
     <header>
       <h1>Todo List ({{incompleteCount}})</h1>
 
@@ -8,20 +7,19 @@
         Hide Completed Tasks
       </label>
 
-       {{> loginButtons}}
+       <a href = "/logout"> Logout, {{currentUser.name}}</a>
 
-        {{#if currentUser}}
+       <br/>
         <form class="new-task">
           <input type="text" name="text" placeholder="Type to add new tasks" />
         </form>
-      {{/if}}
+
     </header>
- 
+
     <ul>
       {{#each tasks}}
         {{> task}}
       {{/each}}
     </ul>
-  </div>
-</body>
- 
+
+  </template>

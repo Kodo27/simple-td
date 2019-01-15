@@ -1,0 +1,14 @@
+<template name= "Prompt_page">
+  <header>
+      <h1>You are not logged in</h1>
+  </header>
+
+  <p>
+    Please login or signup to continue
+  </p>
+  {{#if currentUser}}
+  <a onclick="location.reload()">Proceed to Tasks</a>
+  {{else}}
+  {{> loginButtons}}
+  {{/if}}
+</template>

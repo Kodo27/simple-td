@@ -21,3 +21,6 @@ reactive-dict
 accounts-ui
 accounts-password
 practicalmeteor:mocha
+meteortesting:mocha
+kadira:flow-router
+kadira:blaze-layout
